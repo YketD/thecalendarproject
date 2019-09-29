@@ -14,7 +14,21 @@
 </script>
 
 <style scoped>
-    .link-image {
-        width: 18vw;
+    @media screen and (min-width: 968px) {
+        .link-image {
+            width: 18vw;
+        }
     }
+    @media screen and (max-width: 968px) {
+        .hello {
+            width: 92vw;
+            padding: 12px 24px;
+        }
+
+        .link-image {
+            width: 100%;
+        }
+    }
+
+
 </style>

@@ -29,7 +29,20 @@
 </script>
 
 <style scoped>
-    .background {
+
+    @media screen and (max-width: 968px) {
+        .background {
+            display: none;
+        }
+        .image {
+            -webkit-transform: scale(2);
+            -moz-transform: scale(2);
+            -ms-transform: scale(2);
+            -o-transform: scale(2);
+            transform: scale(2);
+        }
+    }
+        .background {
         width: 100vw;
         /*height: 1000vw;*/
         z-index: -1;
@@ -43,7 +56,7 @@
     }
 
     .image {
-        opacity: .8;
+        opacity: .5;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
