@@ -32,17 +32,23 @@
 
     @media screen and (max-width: 968px) {
         .background {
-            display: none;
+            opacity: .3;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
         }
+
         .image {
-            -webkit-transform: scale(2);
-            -moz-transform: scale(2);
-            -ms-transform: scale(2);
-            -o-transform: scale(2);
-            transform: scale(2);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            transform: scale(1.5) translateY(-200px);
+
         }
     }
-        .background {
+
+    .background {
         width: 100vw;
         /*height: 1000vw;*/
         z-index: -1;
@@ -76,14 +82,12 @@
         top: 4vh;
     }
 
-
     .image-2 {
         width: 15vw;
         position: absolute;
-        left: 74vw;
+        left: 72vw;
         top: 16vh;
     }
-
 
     .image-3 {
         width: 22vw;
@@ -91,7 +95,6 @@
         left: 76vw;
         top: 65vh;
     }
-
 
     .image-4 {
         width: 27vw;
@@ -110,7 +113,7 @@
     .image-6 {
         width: 24vw;
         position: absolute;
-        left:34vw;
+        left: 34vw;
         top: 54vh;
     }
 
