@@ -52,7 +52,7 @@
 
     .product-container {
         background: white;
-        border: 4px solid #aa443c;
+        border: 7px solid #aa443c;
         position: relative;
         border-radius: 2px;
         display: flex;
