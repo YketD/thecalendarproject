@@ -1,27 +1,28 @@
 <template>
     <div class="home-container">
-        <div class="fixed grid-75-25">
+        <div class="fixed">
+            <h1 id="headline">THE NUDE CALENDER PROJECT</h1>
+            <span class="sub-text">Shot by Lara Verheijden</span>
             <div class="products">
                 <product-card
                         class="product-card"
-                        label="2021"
+                        label="BERLIN"
                         v-on:click.native="orderProduct('frame-product-4256651706434')"
-                        :image-title="'/images/products/cover-2020.png'"></product-card>
+                        :image-title="'/images/products/berlin-2021.jpg'" />
                 <product-card
                         class="product-card"
+                        label="AMSTERDAM"
                         v-on:click.native="orderProduct('frame-product-4256713769026')"
-                        :image-title="'/images/products/product-2019.jpg'"></product-card>
+                        :image-title="'/images/products/amsterdam-2021.jpg'" />
                 <product-card
                         class="product-card"
-                        padding="true"
                         v-on:click.native="orderProduct('frame-product-4256651706434')"
-                        :image-title="'/images/products/print-with-calendar.png'"></product-card>
-                <div></div>
+                        :image-title="'/images/products/ams-berlin-2021.jpg'" />
                 <product-card
                         class="product-card"
                         label="2019"
                         v-on:click.native="orderProduct('frame-product-4256713769026')"
-                        :image-title="'/images/products/product-2019.jpg'"></product-card>
+                        :image-title="'/images/products/product-2019.jpg'" />
             </div>
         </div>
         <background-component />
@@ -248,13 +249,31 @@
 </script>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    #headline {
+        font-size: 4em;
+        margin: 12px;
+        padding: 0;
+        text-align: left;
+        color: #aa443c;
+        font-weight: 900;
+    }
+
+    .row-one {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     #product-component-1571344510124, #product-component-1571344433543 {
         display: none;
     }
 
     @media screen and (min-width: 968px) {
         .home-container {
-            font-family: 'Avenir', Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-align: center;
@@ -278,10 +297,12 @@
         }
 
         .products {
-            padding: 10vw;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 5vw;
+            grid-gap: 2vw;
+            width: 80%;
+            overflow: scroll;
+            padding: 82px;
         }
 
         .button-container-box {
@@ -290,16 +311,21 @@
             border: 8px solid #aa443c;
         }
 
-        .fixed {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            top: 0;
-        }
-
+        /*.fixed {*/
+        /*    position: fixed;*/
+        /*    width: 100vw;*/
+        /*    height: 100vh;*/
+        /*    display: flex;*/
+        /*    top: 0;*/
+        /*}*/
         .logo {
             width: 30vw;
+        }
+    }
+
+    @media (max-width: 1380px) {
+        .products {
+            width: 100%;
         }
     }
 
@@ -318,8 +344,19 @@
         }
     }
 
-    .products {
-        width: 100%;
-        overflow: scroll;
+    .fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-text {
+        font-size: 32px;
+        color: #aa443c;
+        text-align: left;
+        margin-left: 40rem;
     }
 </style>

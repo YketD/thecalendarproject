@@ -159,7 +159,6 @@
 
     @media screen and (min-width: 968px) {
         .home-container {
-            font-family: 'Avenir', Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-align: center;
@@ -186,7 +185,6 @@
             /*margin-left: 5vw;*/
             position: fixed;
             top: 27vh;
-            left: 5vw;
             display: flex;
             flex-direction: row;
         }

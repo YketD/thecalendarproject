@@ -10,8 +10,12 @@
     }
 
     @font-face {
-        font-family: 'HelveticaNeue';
-        src: url('/fonts/HelveticaNeueBold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+        font-family: 'HelveticaNeue-75';
+        src: url('/fonts/NHaasGroteskDSStd-75Bd.svg#NHaasGroteskDSStd-75Bd') format('svg'),
+        url('/fonts/NHaasGroteskDSStd-75Bd.ttf') format('truetype'),
+        url('/fonts/NHaasGroteskDSStd-75Bd.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
     }
 
     .logo {
@@ -23,8 +27,7 @@
 
     body {
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-        font-family: "Helvetica Neue";
-        font-family: "HelveticaNeue";
+        font-family: "HelveticaNeue-75";
         width: 100vw;
         height: 100vh;
     }
