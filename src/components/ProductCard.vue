@@ -3,8 +3,10 @@
         <h1 class="label red" v-if="label">{{label}}</h1>
         <div class="product-container">
             <h1 class="red">{{label}}</h1>
+            <h2 class="bottom">{{bottomLabel}}</h2>
             <img class="product-image" :src="imageTitle">
-            <div class="text"><h2>Limited edition <br /> Signed print + Calendar</h2></div>
+            <div class="text"><h2>{{bottomText}}</h2></div>
+            <div><h3>{{price}}</h3></div>
             <img class="buy-now" src="../../public/images/buttons/buy-now.png">
         </div>
     </div>
@@ -19,6 +21,18 @@
                 type: String,
                 required: false,
             },
+            bottomLabel: {
+                type: String,
+                required: false,
+            },
+            bottomText: {
+                type: String,
+                required: false,
+            },
+            price: {
+                type: String,
+                required: false,
+            },
         }
     }
 </script>
@@ -27,6 +41,11 @@
 <style scoped>
     h1 {
         margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin: 0;
     }
 
     .label {
@@ -46,7 +65,7 @@
         }
     }
 
-    .red {
+    .red, .bottom {
         color: #aa443c;
     }
 
@@ -58,12 +77,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
 
     .product-image {
         width: auto;
-        padding:  0 32px  ;
+        padding: 0 32px;
         max-width: 100%;
         box-sizing: border-box;
     }

@@ -31,7 +31,6 @@
             <div id='product-component-1571344510124'></div>
         </div>
 
-
         <background-component />
 
     </div>

@@ -4,20 +4,37 @@
             <h1 id="headline">THE NUDE CALENDER PROJECT</h1>
             <span class="sub-text">Shot by Lara Verheijden</span>
             <div class="products">
+                <div class="label"><img src="/images/assets/2021.png" /></div>
                 <product-card
                         class="product-card"
                         label="BERLIN"
-                        v-on:click.native="orderProduct('frame-product-4256651706434')"
-                        :image-title="'/images/products/berlin-2021.jpg'" />
+                        price="€35,-"
+                        v-on:click.native="orderProduct('frame-product-1602178881523')"
+                        :image-title="'/images/products/berlin-2021-final.jpeg'" />
                 <product-card
                         class="product-card"
                         label="AMSTERDAM"
-                        v-on:click.native="orderProduct('frame-product-4256713769026')"
-                        :image-title="'/images/products/amsterdam-2021.jpg'" />
+                        bottom-label=" "
+                        price="€35,-"
+                        v-on:click.native="orderProduct('frame-product-1602178731128')"
+                        :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
                 <product-card
                         class="product-card"
+                        label="COMBI"
+                        bottom-label="Signed print + Calendar"
+                        price="€35,-"
+                        bottom-text=""
                         v-on:click.native="orderProduct('frame-product-4256651706434')"
                         :image-title="'/images/products/ams-berlin-2021.jpg'" />
+                <product-card
+                        class="product-card"
+                        label="Berlin COMBI"
+                        bottom-label="Signed print + Calendar"
+                        price="€35,-"
+                        bottom-text=""
+                        v-on:click.native="orderProduct('frame-product-1602178988244')"
+                        :image-title="'/images/products/ams-berlin-2021.jpg'" />
+                <div class="label"><img src="/images/assets/2020.png" /></div>
                 <product-card
                         class="product-card"
                         label="2019"
@@ -26,6 +43,17 @@
             </div>
         </div>
         <background-component />
+
+<!--        &lt;!&ndash; ber 2021 &ndash;&gt;-->
+<!--        <div id='product-component-1602178881523'></div>-->
+
+<!--        &lt;!&ndash; ams 2021 &ndash;&gt;-->
+<!--        <div id='product-component-1602178731128'></div>-->
+
+<!--        &lt;!&ndash; signed ams 2021 / print &ndash;&gt;-->
+
+<!--        &lt;!&ndash; signed ber 2021 / print &ndash;&gt;-->
+<!--        <div id='product-component-1602178988244'></div>-->
 
         <!-- 2020 -->
         <div id='product-component-1571344510124'></div>
@@ -52,7 +80,8 @@
         methods: {
             orderProduct(fname) {
                 let iframe = document.getElementsByName(fname)[0];
-                console.log()
+                console.log(iframe.contentWindow.document)
+
                 let button = iframe.contentWindow.document.getElementsByTagName('button')[0]
                 button.click();
             }
@@ -262,6 +291,20 @@
         font-weight: 900;
     }
 
+    .label {
+        grid-column-start: 1;
+        grid-column-end:   4;
+        background-image: url("/images/assets/Label.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 350px;
+        padding: 60px 40px;
+        text-align: left;
+    }
+
+    .label img {
+        width: 150px;
+    }
     .row-one {
         width: 100%;
         display: grid;
@@ -298,7 +341,9 @@
 
         .products {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                    'div'
+                    'b b b';
             grid-gap: 2vw;
             width: 80%;
             overflow: scroll;
