@@ -11,9 +11,9 @@
 
     @font-face {
         font-family: 'HelveticaNeue-75';
-        src: url('/fonts/NHaasGroteskDSStd-75Bd.svg#NHaasGroteskDSStd-75Bd') format('svg'),
-        url('/fonts/NHaasGroteskDSStd-75Bd.ttf') format('truetype'),
-        url('/fonts/NHaasGroteskDSStd-75Bd.woff') format('woff');
+        src: url('/fonts/NHaasGroteskDSStd-55Rg.svg#NHaasGroteskDSStd-55Rg') format('svg'),
+        url('/fonts/NHaasGroteskDSStd-55Rg.ttf') format('truetype'),
+        url('/fonts/NHaasGroteskDSStd-55Rg.woff') format('woff');
         font-weight: 700;
         font-style: normal;
     }
