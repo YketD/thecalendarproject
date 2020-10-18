@@ -54,6 +54,10 @@
                         label="2020 Kalender"
                         v-on:click.native="orderProduct('frame-product-4256713769026')"
                         :image-title="'/images/products/2020-available.jpg'" />
+                <div></div>
+                <div class="year-label">
+                    <img src="/images/assets/2019.png" />
+                </div>
                 <product-card
                         class="product-card"
                         label="2019 Kalender"
