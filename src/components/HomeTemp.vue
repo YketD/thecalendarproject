@@ -9,6 +9,14 @@
                 </div>
                 <product-card
                         class="product-card"
+                        label="The Amsterdam"
+                        bottom-label="calender"
+                        discount-sticker="/images/assets/sticker-35.png"
+                        price="€35,-"
+                        v-on:click.native="orderProduct('frame-product-4701905027138')"
+                        :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
+                <product-card
+                        class="product-card"
                         :class="{disabled: isEmpty('frame-product-4701904633922')}"
                         label="The Berlin"
                         discount-sticker="/images/assets/sticker-35.png"
@@ -16,14 +24,6 @@
                         price="€35,-"
                         v-on:click.native="orderProduct('frame-product-4701904633922')"
                         :image-title="'/images/products/berlin-2021-final.jpeg'" />
-                <product-card
-                        class="product-card"
-                        label="The Amsterdam"
-                        bottom-label="calender"
-                        discount-sticker="/images/assets/sticker-35.png"
-                        price="€35,-"
-                        v-on:click.native="orderProduct('frame-product-4701905027138')"
-                        :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
                 <div class="column-fill"></div>
                 <product-card
                         class="product-card"
