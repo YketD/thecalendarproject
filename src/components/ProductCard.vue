@@ -111,9 +111,9 @@
 
     .price-sticker {
         position: absolute;
-        top: -40px;
-        right: -50px;
-        max-width: 200px;
+        top: -80px;
+        right: -250px;
+        max-width:300px;
     }
 
     .price-label-container {

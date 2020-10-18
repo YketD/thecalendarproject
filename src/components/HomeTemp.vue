@@ -11,17 +11,17 @@
                         class="product-card"
                         label="The Amsterdam"
                         bottom-label="calender"
-                        discount-sticker="/images/assets/sticker-35.png"
-                        price="€35,-"
+                        discount-sticker="/images/assets/label-35.png"
+                        price="€45,-"
                         v-on:click.native="orderProduct('frame-product-4701905027138')"
                         :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
                 <product-card
                         class="product-card"
                         :class="{disabled: isEmpty('frame-product-4701904633922')}"
                         label="The Berlin"
-                        discount-sticker="/images/assets/sticker-35.png"
+                        discount-sticker="/images/assets/label-35.png"
                         bottom-label="calender"
-                        price="€35,-"
+                        price="€45,-"
                         v-on:click.native="orderProduct('frame-product-4701904633922')"
                         :image-title="'/images/products/berlin-2021-final.jpeg'" />
                 <div class="column-fill"></div>
@@ -31,6 +31,7 @@
                         has-image="true"
                         bottom-label-two="Signed print + calendar Amsterdam"
                         price="€135,-"
+                        discount-sticker="/images/assets/label-only-50.png"
                         bottom-text=""
                         v-on:click.native="orderProduct('frame-product-4701905322050')"
                         :image-title="'/images/products/ams-2021-print.png'" />
@@ -40,11 +41,13 @@
                         bottom-label=""
                         has-image="true"
                         bottom-label-two="Signed print + calendar Berlin"
+
                         price="€135,-"
                         bottom-text="Limited Edition of 50"
                         bottom-text-two="Size print 36 x 24 cm "
                         bottom-text-three="Gicleeprint op Epson luster 300 grms"
                         v-on:click.native="orderProduct('frame-product-4256651706434')"
+                        discount-sticker="/images/assets/label-only-50.png"
                         :image-title="'/images/products/calendar-print.png'" />
                 <div class="year-label">
                     <img src="/images/assets/2020.png" />
@@ -635,7 +638,8 @@
     #product-component-1602178881523,
     #product-component-1602178731128,
     #product-component-1602178988244 {
-        display: none;
+        display: true;
+        z-index: 100;
     }
 
     .home-container {
