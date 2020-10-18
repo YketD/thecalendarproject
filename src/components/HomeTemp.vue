@@ -52,6 +52,7 @@
                 <product-card
                         class="product-card"
                         label="2020 Kalender"
+                        price="€75,-"
                         v-on:click.native="orderProduct('frame-product-4256713769026')"
                         :image-title="'/images/products/2020-available.jpg'" />
                 <div></div>
