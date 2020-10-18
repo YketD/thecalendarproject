@@ -588,6 +588,12 @@
         font-weight: 900;
     }
 
+    @media (max-width: 500px) {
+        #headline {
+            font-size: 3em;
+        }
+    }
+
     .year-label {
         background-image: url("/images/assets/Label.png");
         background-repeat: no-repeat;
@@ -649,6 +655,7 @@
         width: 100%;
         overflow: scroll;
         padding: 40px 124px;
+        margin-bottom: 24px;
     }
 
     @media (max-width: 1630px) {
