@@ -28,6 +28,15 @@
                 <product-card
                         class="product-card"
                         label="COMBI"
+                        has-image="true"
+                        bottom-label-two="Signed print + calendar Amsterdam"
+                        price="€135,-"
+                        bottom-text=""
+                        v-on:click.native="orderProduct('frame-product-4701905322050')"
+                        :image-title="'/images/products/ams-2021-print.png'" />
+                <product-card
+                        class="product-card"
+                        label="COMBI"
                         bottom-label=""
                         has-image="true"
                         bottom-label-two="Signed print + calendar Berlin"
@@ -37,15 +46,6 @@
                         bottom-text-three="Gicleeprint op Epson luster 300 grms"
                         v-on:click.native="orderProduct('frame-product-4256651706434')"
                         :image-title="'/images/products/calendar-print.png'" />
-                <product-card
-                        class="product-card"
-                        label="COMBI"
-                        has-image="true"
-                        bottom-label-two="Signed print + calendar Amsterdam"
-                        price="€135,-"
-                        bottom-text=""
-                        v-on:click.native="orderProduct('frame-product-4701905322050')"
-                        :image-title="'/images/products/ams-2021-print.png'" />
                 <div class="year-label">
                     <img src="/images/assets/2020.png" />
                 </div>
@@ -64,7 +64,7 @@
                         label="2019 Kalender"
                         v-on:click.native="orderProduct('frame-product-4256713769026')"
                         :image-title="'/images/products/2019-sold-out.jpg'"
-                price="Sold out!"/>
+                />
             </div>
         </div>
         <!--        <background-component />-->
