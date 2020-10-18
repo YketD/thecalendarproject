@@ -11,7 +11,7 @@
             <div v-if="!hasImage"><h2 class="text">{{bottomTextTwo}}</h2></div>
             <div v-if="!hasImage"><h2 class="text">{{bottomTextThree}}</h2></div>
             <div class="price-label-container">
-                <h3 class="price-label">{{price}}</h3>
+                <h3 class="price-label" :class="{'no-margin': hasImage}">{{price}}</h3>
                 <img class="price-sticker" v-if="discountSticker" :src="discountSticker" />
             </div>
 
@@ -100,6 +100,8 @@
         margin: 0;
         margin-bottom: 32px;
     }
+
+
 
     .price-label {
         font-size: 62px;
@@ -196,5 +198,9 @@
     .hello {
         position: relative;
         background: none;
+    }
+    .no-margin {
+        margin:  0;
+        transform: translateY(-40px);
     }
 </style>
