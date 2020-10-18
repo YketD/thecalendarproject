@@ -3,14 +3,16 @@
         <div class="product-container">
             <h1 class="red top">{{label}} {{bottomLabel}}</h1>
             <h1 class="red bottom">{{bottomLabelTwo}}</h1>
-            <img class="product-image" :src="imageTitle">
+            <div class="product-image-container">
+                <img class="product-image" :src="imageTitle">
+            </div>
             <img class="label-img" v-if="hasImage" src="/images/assets/label-print.png">
             <div v-if="!hasImage"><h2 class="text">{{bottomText}}</h2></div>
             <div v-if="!hasImage"><h2 class="text">{{bottomTextTwo}}</h2></div>
             <div v-if="!hasImage"><h2 class="text">{{bottomTextThree}}</h2></div>
             <div class="price-label-container">
                 <h3 class="price-label">{{price}}</h3>
-                <img class="price-sticker" v-if="discountSticker" :src="discountSticker"/>
+                <img class="price-sticker" v-if="discountSticker" :src="discountSticker" />
             </div>
 
             <img class="buy-now" src="../../public/images/buttons/buy-now.png">
@@ -69,7 +71,7 @@
     }
 
     @media (max-width: 932px) {
-        .label-img{
+        .label-img {
             max-width: 175px;
         }
     }
@@ -142,6 +144,7 @@
     .red, .bottom {
         color: #000000;
     }
+
     @media (max-width: 932px) {
         .red {
             font-size: 22px;
@@ -163,23 +166,28 @@
 
     .product-image {
         width: auto;
-        padding: 0 82px;
         max-width: 100%;
         box-sizing: border-box;
     }
 
-    @media (max-width: 932px) {
-        .product-image {
-            padding: 0 54px;
+    .product-image-container {
+        padding: 0 82px;
+    }
+
+    @media (max-width: 1230px) {
+        .product-image-container {
+            padding: 0 42px;
         }
     }
+
+
     @media (max-width: 932px) {
-        .product-image {
+        .product-image-container {
             padding: 0 24px;
         }
     }
 
-        .buy-now {
+    .buy-now {
         width: 256px;
         position: absolute;
         bottom: -75px;
