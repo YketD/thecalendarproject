@@ -67,7 +67,7 @@
 <style scoped>
     .label-img {
         max-width: 300px;
-        transform: translateY(-20px);
+        transform: translateY(-60px);
     }
 
     @media (max-width: 932px) {
@@ -109,7 +109,7 @@
 
     .price-sticker {
         position: absolute;
-        top: -20px;
+        top: -40px;
         right: -50px;
         max-width: 200px;
     }
