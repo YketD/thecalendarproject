@@ -51,14 +51,15 @@
                 </div>
                 <product-card
                         class="product-card"
-                        label="2020"
+                        label="2020 Kalender"
                         v-on:click.native="orderProduct('frame-product-4256713769026')"
                         :image-title="'/images/products/2020-available.jpg'" />
                 <product-card
                         class="product-card"
-                        label="2019"
+                        label="2019 Kalender"
                         v-on:click.native="orderProduct('frame-product-4256713769026')"
-                        :image-title="'/images/products/2019-sold-out.jpg'" />
+                        :image-title="'/images/products/2019-sold-out.jpg'"
+                price="Sold out!"/>
             </div>
         </div>
         <!--        <background-component />-->
@@ -572,7 +573,6 @@
 <style>
     * {
         box-sizing: border-box;
-        /*transform: scale(0.99);*/
     }
 
     #headline {
@@ -598,22 +598,26 @@
     .year-label img {
         width: 125px;
     }
-@media (max-width: 1230px) {
-    .column-fill {
-        grid-column-end: 3;
+
+    @media (max-width: 1230px) {
+        .column-fill {
+            grid-column-end: 3;
+        }
     }
-}
+
     @media (max-width: 932px) {
         .year-label {
-            grid-column-end: 2;
+            grid-column-end: 3;
             background-size: 250px 125px;
             height: 125px;
             margin-top: 20px;
             margin-left: 20px;
         }
+        .column-fill {
+            grid-column-end: 1;
+            grid-column-start: 3;
+        }
     }
-
-
 
     #product-component-1571344510124,
     #product-component-1571344433543,
@@ -661,7 +665,7 @@
         }
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 780px) {
         .products {
             grid-template-columns: 1fr;
             grid-gap: 12vw;
@@ -669,10 +673,15 @@
             overflow: hidden;
         }
 
+        .column-fill {
+            grid-column-end: 1;
+            grid-column-start: 2;
+        }
+
         .year-label {
-            grid-column-start: 1;
             grid-column-end: 2;
         }
+
     }
 
     .fixed {
@@ -697,10 +706,12 @@
     }
 
     @media (min-width: 932px) {
-        .product-card:hover{
+        .product-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }
     }
+
     @media (max-width: 1630px) {
         .product-card {
             margin: 22px;

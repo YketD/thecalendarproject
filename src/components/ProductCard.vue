@@ -142,6 +142,11 @@
     .red, .bottom {
         color: #000000;
     }
+    @media (max-width: 932px) {
+        .red {
+            font-size: 22px;
+        }
+    }
 
     .product-container {
         background: white;
