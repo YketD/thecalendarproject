@@ -24,7 +24,7 @@
                         price="€35,-"
                         v-on:click.native="orderProduct('frame-product-4701905027138')"
                         :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
-                <div></div>
+                <div class="column-fill"></div>
                 <product-card
                         class="product-card"
                         label="COMBI"
@@ -41,7 +41,7 @@
                         class="product-card"
                         label="COMBI"
                         has-image="true"
-                        bottom-label="Signed print + calendar Amsterdam"
+                        bottom-label-two="Signed print + calendar Amsterdam"
                         price="€135,-"
                         bottom-text=""
                         v-on:click.native="orderProduct('frame-product-4701905322050')"
@@ -598,7 +598,11 @@
     .year-label img {
         width: 125px;
     }
-
+@media (max-width: 1230px) {
+    .column-fill {
+        grid-column-end: 3;
+    }
+}
     @media (max-width: 932px) {
         .year-label {
             grid-column-end: 2;
@@ -608,6 +612,8 @@
             margin-left: 20px;
         }
     }
+
+
 
     #product-component-1571344510124,
     #product-component-1571344433543,
@@ -642,12 +648,30 @@
             padding: 40px 64px;
         }
     }
-    @media (max-width: 932px) {
+
+    @media (max-width: 1230px) {
+        .products {
+            grid-template-columns: 1fr 1fr;
+            padding: 40px 24px;
+        }
+
+        .year-label {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    @media (max-width: 720px) {
         .products {
             grid-template-columns: 1fr;
             grid-gap: 12vw;
             padding: 0px;
             overflow: hidden;
+        }
+
+        .year-label {
+            grid-column-start: 1;
+            grid-column-end: 2;
         }
     }
 
@@ -671,9 +695,15 @@
     .product-card {
         margin: 22px 80px;
     }
+
+    @media (min-width: 932px) {
+        .product-card:hover{
+            transform: scale(1.05);
+        }
+    }
     @media (max-width: 1630px) {
         .product-card {
-            margin:22px;
+            margin: 22px;
         }
     }
 
