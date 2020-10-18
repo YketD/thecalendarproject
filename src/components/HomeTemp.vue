@@ -11,6 +11,7 @@
                         class="product-card"
                         :class="{disabled: isEmpty('frame-product-4701904633922')}"
                         label="The Berlin"
+                        discount-sticker="/images/assets/sticker-35.png"
                         bottom-label="calender"
                         price="€35,-"
                         v-on:click.native="orderProduct('frame-product-4701904633922')"
@@ -19,6 +20,7 @@
                         class="product-card"
                         label="The Amsterdam"
                         bottom-label="calender"
+                        discount-sticker="/images/assets/sticker-35.png"
                         price="€35,-"
                         v-on:click.native="orderProduct('frame-product-4701905027138')"
                         :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
@@ -635,6 +637,11 @@
         padding: 40px 124px;
     }
 
+    @media (max-width: 1630px) {
+        .products {
+            padding: 40px 64px;
+        }
+    }
     @media (max-width: 932px) {
         .products {
             grid-template-columns: 1fr;
@@ -663,9 +670,8 @@
 
     .product-card {
         margin: 22px 80px;
-        /*min-width: 30vw;*/
     }
-    @media (max-width: 1440px) {
+    @media (max-width: 1630px) {
         .product-card {
             margin:22px;
         }

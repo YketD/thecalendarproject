@@ -8,7 +8,11 @@
             <div v-if="!hasImage"><h2 class="text">{{bottomText}}</h2></div>
             <div v-if="!hasImage"><h2 class="text">{{bottomTextTwo}}</h2></div>
             <div v-if="!hasImage"><h2 class="text">{{bottomTextThree}}</h2></div>
-            <div><h3 class="price-label">{{price}}</h3></div>
+            <div class="price-label-container">
+                <h3 class="price-label">{{price}}</h3>
+                <img class="price-sticker" v-if="discountSticker" :src="discountSticker"/>
+            </div>
+
             <img class="buy-now" src="../../public/images/buttons/buy-now.png">
         </div>
     </div>
@@ -42,6 +46,10 @@
                 type: String,
                 required: false,
             }, bottomTextThree: {
+                type: String,
+                required: false,
+            },
+            discountSticker: {
                 type: String,
                 required: false,
             },
@@ -95,6 +103,17 @@
         font-size: 62px;
         margin: 0px;
         margin-bottom: 42px;
+    }
+
+    .price-sticker {
+        position: absolute;
+        top: -20px;
+        right: -50px;
+        max-width: 200px;
+    }
+
+    .price-label-container {
+        position: relative;
     }
 
     @media (max-width: 932px) {
