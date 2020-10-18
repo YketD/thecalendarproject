@@ -173,8 +173,13 @@
             padding: 0 54px;
         }
     }
+    @media (max-width: 932px) {
+        .product-image {
+            padding: 0 24px;
+        }
+    }
 
-    .buy-now {
+        .buy-now {
         width: 256px;
         position: absolute;
         bottom: -75px;
