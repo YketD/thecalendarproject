@@ -69,30 +69,29 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
     .product-card {
-        margin          : -30px 60px 64px;
+        margin: 50px;
         transition      : all .2s ease-in-out;
         cursor          : pointer;
         position        : relative;
-        background      : none;
-        background      : white;
-        border          : 16px solid #aa443c;
         text-align      : center;
-        border-radius   : 2px;
         display         : flex;
         flex-direction  : column;
         justify-content : center;
         align-items     : center;
-        box-shadow      : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 50px;
+        /*<!--background: #D3D3D3;-->*/
+        box-shadow:  20px 20px 60px #b3b3b3,
+        -20px -20px 60px #f3f3f3;
 
         @media (min-width : 932px) {
             &:hover {
-                transform  : scale(1.05);
-                box-shadow : 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                transform: scale(1.01);
+                           }
+            &:active {
+                transition      : all .2s ease-in-out;
+                box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+                inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
             }
-        }
-
-        @media (max-width : 1630px) {
-            margin : -30px 20px 70px;
         }
 
         @media (max-width : 1230px) {
