@@ -86,6 +86,13 @@
         name: "ProductGrid",
         components: {
             ProductCard,
+        },
+        methods: {
+            orderProduct(fname) {
+                let iframe = document.getElementsByName(fname)[0];
+                let button = iframe.contentWindow.document.getElementsByTagName('button')[0];
+                button.click();
+            }
         }
     }
 </script>
