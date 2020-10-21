@@ -92,14 +92,19 @@
 
 <style lang="scss" scoped>
     .year-label {
-        background-image  : url("/images/assets/Label.png");
+        /*background-image  : url("/images/assets/Label.png");*/
         background-repeat : no-repeat;
         background-size   : 300px 150px;
-        height            : 150px;
-        width             : 300px;
-        padding           : 50px 25px 0;
+        height            : 125px;
+        width             : 200px;
+        padding           : 30px 25px 0;
         text-align        : left;
         margin            : 0;
+
+        border-radius: 50px;
+        /*<!--background: #D3D3D3;-->*/
+        box-shadow:  20px 20px 60px #b3b3b3,
+        -20px -20px 60px #f3f3f3;
 
         img {
             width : 150px;

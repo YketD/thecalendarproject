@@ -13,7 +13,7 @@
             <h3 class="price-label" :class="{'no-margin': hasImage}">{{price}}</h3>
         </div>
 
-        <img class="price-sticker" v-if="discountSticker" :src="discountSticker" />
+<!--        <img class="price-sticker" v-if="discountSticker" :src="discountSticker" />-->
 
         <img class="buy-now" src="../../public/images/buttons/buy-now.png">
     </div>
@@ -197,6 +197,7 @@
         max-width  : 100%;
         box-sizing : border-box;
         max-height : 600px;
+        border-radius: 12px;
     }
 
     .product-image-container {
