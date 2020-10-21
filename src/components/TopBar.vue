@@ -51,7 +51,7 @@
     }
 
     .sub-text {
-        font-size   : 32px;
+        font-size   : 18px;
         color       : #aa443c;
         text-align  : left;
         margin-left : 12px;

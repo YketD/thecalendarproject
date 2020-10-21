@@ -71,7 +71,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
     .product-card {
-        margin          : -30px 60px 64px;
+        margin          : 20px 60px;
         transition      : all .2s ease-in-out;
         cursor          : pointer;
         position        : relative;
@@ -93,11 +93,11 @@
         }
 
         @media (max-width : 1630px) {
-            margin : -30px 20px 70px;
+            margin : 20px 20px 100px;
         }
 
         @media (max-width : 1230px) {
-            margin : 20px 20px 20px;
+            margin : 20px 20px 40px;
         }
 
         @media (max-width : 932px) {
@@ -107,11 +107,12 @@
 
         .header {
             margin-top    : 14px;
-            margin-bottom : 22px;
+            margin-bottom : 10px;
+            font-size : .75vw;
 
             @media (max-width : 930px) {
                 h1 {
-                    font-size : 22px;
+
                 }
             }
         }
