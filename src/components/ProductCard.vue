@@ -15,7 +15,7 @@
             <h3 class="price-label" :class="{'no-margin': hasImage}">{{price}}</h3>
             <h4 class="sub-price-label">TAX included<br/>
                                         FREE shipping in the Netherlands<br/>
-                                        €5,00 shipping in europe</h4>
+                                        €5,00 shipping in Europe</h4>
         </div>
 
         <img class="price-sticker" v-if="discountSticker" :src="discountSticker" />
@@ -112,6 +112,10 @@
             margin-top    : 14px;
             margin-bottom : 10px;
             font-size     : .75vw;
+            font-weight: 400;
+            h1{
+                font-weight: 400;
+            }
         }
 
         .product-image-container {
@@ -161,13 +165,13 @@
             flex-direction : row;
 
             .sub-price-label {
-                margin    : 10px 0px 34px;
+                margin    : 14px 0px 34px;
                 font-size : 10px;
             }
 
             .price-label {
                 margin      : 12px 16px 34px;
-                font-size   : 1.5vw;
+                font-size   : 2vw;
                 font-family : "HelveticaNeue-75";
 
                 @media (max-width : 932px) {
