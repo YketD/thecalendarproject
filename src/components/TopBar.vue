@@ -38,7 +38,7 @@
             padding     : 0;
             text-align  : left;
             color       : #aa443c;
-            font-weight : 900;
+            font-weight : 400;
 
             @media (max-width : 500px) {
                 font-size : 3em;
