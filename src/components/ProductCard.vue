@@ -108,7 +108,7 @@
         .header {
             margin-top    : 14px;
             margin-bottom : 10px;
-            font-size : .75vw;
+            font-size     : .75vw;
         }
 
         .product-image-container {
@@ -134,10 +134,10 @@
         }
 
         .price-sticker {
-            position  : absolute;
-            bottom    : 25%;
-            left     : -125px;
-            max-width : 350px;
+            position    : absolute;
+            bottom      : 25%;
+            left        : -125px;
+            max-width   : 350px;
         }
 
         .label-img {
@@ -157,7 +157,8 @@
 
             .price-label {
                 margin    : 12px 0 34px;
-                font-size : 2vw;
+                font-size : 1.5vw;
+                font-family : "HelveticaNeue-75";
 
                 @media (max-width : 932px) {
                     margin-top : 22px;
