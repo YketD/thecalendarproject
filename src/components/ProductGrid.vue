@@ -105,8 +105,8 @@
         text-align        : left;
         margin            : 0;
 
-        &-2019{
-            background-image: url("/images/assets/2019-label.png");
+        &-2019 {
+            background-image  : url("/images/assets/2019-label.png");
             background-repeat : no-repeat;
             background-size   : 300px 150px;
             height            : 150px;
@@ -164,9 +164,8 @@
         grid-row-gap          : 0px;
 
         @media (max-width : 1630px) {
-            padding : 40px 0px;
-            grid-gap              : 30px;
-
+            padding  : 40px 0px;
+            grid-gap : 30px;
         }
 
         @media (max-width : 1230px) {
