@@ -136,8 +136,8 @@
         .price-sticker {
             position  : absolute;
             bottom    : 25%;
-            left     : -100px;
-            max-width : 300px;
+            left     : -125px;
+            max-width : 350px;
         }
 
         .label-img {
