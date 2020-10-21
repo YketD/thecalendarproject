@@ -13,7 +13,7 @@
 
         <div class="price-label-container">
             <h3 class="price-label" :class="{'no-margin': hasImage}">{{price}}</h3>
-            <h4 class="sub-price-label">TAX included<br/>
+            <h4 class="sub-price-label">VAT included<br/>
                                         FREE shipping in the Netherlands<br/>
                                         €5,00 shipping in Europe</h4>
         </div>
