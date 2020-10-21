@@ -109,12 +109,6 @@
             margin-top    : 14px;
             margin-bottom : 10px;
             font-size : .75vw;
-
-            @media (max-width : 930px) {
-                h1 {
-
-                }
-            }
         }
 
         .product-image-container {
@@ -141,8 +135,8 @@
 
         .price-sticker {
             position  : absolute;
-            bottom    : -40px;
-            right     : -80px;
+            bottom    : 25%;
+            left     : -100px;
             max-width : 300px;
         }
 
@@ -163,7 +157,7 @@
 
             .price-label {
                 margin    : 0 0 42px;
-                font-size : 32px;
+                font-size : 2vw;
 
                 @media (max-width : 932px) {
                     margin-top : 22px;

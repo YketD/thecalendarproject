@@ -158,13 +158,15 @@
         width                 : 100%;
         max-width             : 100vw;
         overflow              : hidden;
-        padding               : 40px 124px;
+        padding               : 40px 72px;
         margin-bottom         : 24px;
         grid-gap              : 60px;
         grid-row-gap          : 0px;
 
         @media (max-width : 1630px) {
-            padding : 40px 44px;
+            padding : 40px 0px;
+            grid-gap              : 30px;
+
         }
 
         @media (max-width : 1230px) {
