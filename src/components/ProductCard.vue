@@ -156,7 +156,7 @@
             position : relative;
 
             .price-label {
-                margin    : 0 0 42px;
+                margin    : 12px 0 34px;
                 font-size : 2vw;
 
                 @media (max-width : 932px) {
