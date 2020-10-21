@@ -60,7 +60,6 @@
                 price="€75,-"
                 v-on:click.native="orderProduct('frame-product-4256713769026')"
                 :image-title="'/images/products/2020-available.jpg'" />
-
         <div></div>
 
         <div class="year-label-2019">
@@ -161,7 +160,7 @@
         padding               : 40px 72px;
         margin-bottom         : 24px;
         grid-gap              : 60px;
-        grid-row-gap          : 0px;
+        grid-row-gap          : 40px;
 
         @media (max-width : 1630px) {
             padding  : 40px 0px;
