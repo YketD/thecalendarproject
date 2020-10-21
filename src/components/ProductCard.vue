@@ -4,12 +4,12 @@
             <h1 class="red top">{{label}} {{bottomLabel}}</h1>
             <h1 class="red bottom">{{bottomLabelTwo}}</h1>
         </div>
+        <img class="label-img" v-if="hasImage" src="/images/assets/label-langerekt.png">
 
         <div class="product-image-container" :class="{lesspadding: lessPadding }">
             <img class="product-image" :src="imageTitle">
         </div>
 
-        <img class="label-img" v-if="hasImage" src="/images/assets/label-limited-to.png">
 
         <div class="price-label-container" :class="{transform: hasImage}">
             <h3 class="price-label">{{price}}</h3>
@@ -149,11 +149,11 @@
         }
 
         .label-img {
-            max-width     : 225px;
-            transform     : translateY(-40px);
-            border-radius : 5px;
-            background    : linear-gradient(145deg, #bebebe, #e2e2e2);
-            box-shadow    : 5px 5px 10px #b5b5b5;
+            max-width     : 350px;
+            transform     : translateY(-0px);
+            /*border-radius : 5px;*/
+            /*background    : linear-gradient(145deg, #bebebe, #e2e2e2);*/
+            /*box-shadow    : 5px 5px 10px #b5b5b5;*/
 
             @media (max-width : 932px) {
                 max-width : 175px;
@@ -166,7 +166,8 @@
             flex-direction : row;
 
             &.transform {
-                transform : translateY(-40px);
+                transform : translateY(-0px);
+                margin-bottom: 20px;
 
                 .price-label {
                     margin : 12px 16px 12px;
