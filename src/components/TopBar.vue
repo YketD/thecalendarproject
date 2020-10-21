@@ -54,9 +54,6 @@
         font-size   : 18px;
         color       : #aa443c;
         text-align  : left;
-        margin-left : 12px;
-        @media (max-width : 932px) {
-            margin-left : 12px;
-        }
+        margin-left : 22px;
     }
 </style>
