@@ -1,7 +1,9 @@
 <template>
     <div class="product-card">
-        <h1 class="red top">{{label}} {{bottomLabel}}</h1>
-        <h1 class="red bottom">{{bottomLabelTwo}}</h1>
+        <div class="header">
+            <h1 class="red top">{{label}} {{bottomLabel}}</h1>
+            <h1 class="red bottom">{{bottomLabelTwo}}</h1>
+        </div>
 
         <div class="product-image-container" :class="{lesspadding: lessPadding }">
             <img class="product-image" :src="imageTitle">
@@ -73,7 +75,6 @@
         transition      : all .2s ease-in-out;
         cursor          : pointer;
         position        : relative;
-        background      : none;
         background      : white;
         border          : 16px solid #aa443c;
         text-align      : center;
@@ -104,122 +105,73 @@
             margin  : 0;
         }
 
+        .header {
+            margin-top    : 14px;
+            margin-bottom : 22px;
+
+            @media (max-width : 930px) {
+                h1 {
+                    font-size : 22px;
+                }
+            }
+        }
+
+        .product-image-container {
+            padding : 0 82px;
+
+            .product-image {
+                width      : auto;
+                max-width  : 100%;
+                box-sizing : border-box;
+                max-height : 600px;
+            }
+
+            &.lesspadding {
+                padding : 0 24px;
+            }
+
+            @media (max-width : 1230px) {
+                padding : 0 42px;
+            }
+            @media (max-width : 932px) {
+                padding : 0 24px;
+            }
+        }
+
         .price-sticker {
             position  : absolute;
             bottom    : -40px;
             right     : -80px;
             max-width : 300px;
         }
-    }
 
-    .label-img {
-        max-width : 225px;
-        transform : translateY(-40px);
-        border-radius: 5px;
-        background: linear-gradient(145deg, #bebebe, #e2e2e2);
-        box-shadow:  5px 5px 10px #b5b5b5}
-
-    @media (max-width : 932px) {
         .label-img {
-            max-width : 175px;
+            max-width     : 225px;
+            transform     : translateY(-40px);
+            border-radius : 5px;
+            background    : linear-gradient(145deg, #bebebe, #e2e2e2);
+            box-shadow    : 5px 5px 10px #b5b5b5;
+
+            @media (max-width : 932px) {
+                max-width : 175px;
+            }
+        }
+
+        .price-label-container {
+            position : relative;
+
+            .price-label {
+                margin    : 0 0 42px;
+                font-size : 32px;
+
+                @media (max-width : 932px) {
+                    margin-top : 22px;
+                    font-size  : 42px;
+                }
+            }
         }
     }
 
-    .top {
-        margin-top : 20px;
-    }
-
-    @media (max-width : 932px) {
-        .top {
-            margin-top : 14px;
-        }
-    }
-
-    .bottom {
-        margin-bottom : 22px;
-    }
-
-    h1 {
-        padding : 0;
-        margin  : 0;
-    }
-
-    h3 {
-        font-size     : 24px;
-        margin        : 0;
-        margin-bottom : 32px;
-    }
-
-    .price-label {
-        font-size     : 42px;
-        margin        : 0px;
-        margin-bottom : 42px;
-    }
-
-
-    .price-label-container {
-        position : relative;
-    }
-
-    @media (max-width : 932px) {
-        .price-label {
-            margin-top : 22px;
-            font-size  : 42px;
-        }
-    }
-
-    .text {
-        margin    : 0px;
-        font-size : 28px;
-    }
-
-    .sub-text {
-        margin    : 12px;
-        font-size : 22px;
-        color     : #2c3e50;
-    }
-
-    .red, .bottom {
-        color : #000000;
-    }
-
-    @media (max-width : 932px) {
-        .red {
-            font-size : 22px;
-        }
-    }
-
-    .product-container {
-
-    }
-
-    .product-image {
-        width      : auto;
-        max-width  : 100%;
-        box-sizing : border-box;
-        max-height : 600px;
-    }
-
-    .product-image-container {
-        padding : 0 82px;
-    }
-
-    .lesspadding {
-        padding : 0 24px;
-    }
-
-    @media (max-width : 1230px) {
-        .product-image-container {
-            padding : 0 42px;
-        }
-    }
-
-
-    @media (max-width : 932px) {
-        .product-image-container {
-            padding : 0 24px;
-        }
-    }
 
     .buy-now {
         width    : 256px;

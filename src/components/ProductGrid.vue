@@ -32,7 +32,6 @@
                 has-image="true"
                 bottom-label-two="Signed print + calendar Amsterdam"
                 price="€135,-"
-                discount-sticker="/images/assets/label-only-50.png"
                 bottom-text=""
                 v-on:click.native="orderProduct('frame-product-4701905322050')"
                 :image-title="'/images/products/ams-2021-print.png'" />
@@ -49,7 +48,6 @@
                 bottom-text-two="Size print 36 x 24 cm "
                 bottom-text-three="Gicleeprint op Epson luster 300 grms"
                 v-on:click.native="orderProduct('frame-product-4256651706434')"
-                discount-sticker="/images/assets/label-only-50.png"
                 :image-title="'/images/products/calendar-print.png'" />
 
         <div class="year-label">
@@ -65,8 +63,7 @@
 
         <div></div>
 
-        <div class="year-label">
-            <img src="/images/assets/2019.png" />
+        <div class="year-label-2019">
         </div>
 
         <product-card
@@ -107,6 +104,17 @@
         padding           : 50px 25px 0;
         text-align        : left;
         margin            : 0;
+
+        &-2019{
+            background-image: url("/images/assets/2019-label.png");
+            background-repeat : no-repeat;
+            background-size   : 300px 150px;
+            height            : 150px;
+            width             : 300px;
+            padding           : 50px 25px 0;
+            text-align        : left;
+            margin            : 0;
+        }
 
         img {
             width : 150px;
