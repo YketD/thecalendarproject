@@ -11,10 +11,10 @@
 
         <img class="label-img" v-if="hasImage" src="/images/assets/label-limited-to.png">
 
-        <div class="price-label-container">
-            <h3 class="price-label" :class="{'no-margin': hasImage}">{{price}}</h3>
-            <h4 class="sub-price-label">VAT included<br/>
-                                        FREE shipping in the Netherlands<br/>
+        <div class="price-label-container" :class="{transform: hasImage}">
+            <h3 class="price-label">{{price}}</h3>
+            <h4 class="sub-price-label">VAT included<br />
+                                        FREE shipping in the Netherlands<br />
                                         €5,00 shipping in Europe</h4>
         </div>
 
@@ -112,9 +112,10 @@
             margin-top    : 14px;
             margin-bottom : 10px;
             font-size     : .75vw;
-            font-weight: 400;
-            h1{
-                font-weight: 400;
+            font-weight   : 400;
+
+            h1 {
+                font-weight : 400;
             }
         }
 
@@ -163,6 +164,18 @@
             position       : relative;
             display        : flex;
             flex-direction : row;
+
+            &.transform {
+                transform : translateY(-40px);
+
+                .price-label {
+                    margin : 12px 16px 12px;
+                }
+
+                .sub-price-label {
+                    margin : 14px 0px 16px;
+                }
+            }
 
             .sub-price-label {
                 margin    : 14px 0px 34px;
