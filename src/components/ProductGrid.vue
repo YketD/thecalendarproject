@@ -28,7 +28,6 @@
         <product-card
                 :less-padding="true"
                 class="product-card"
-                label="COMBI"
                 has-image="true"
                 bottom-label-two="Signed print + calendar Amsterdam"
                 price="€135,-"
@@ -39,7 +38,7 @@
         <product-card
                 :less-padding="true"
                 class="product-card"
-                label="COMBI"
+
                 bottom-label=""
                 has-image="true"
                 bottom-label-two="Signed print + calendar Berlin"
