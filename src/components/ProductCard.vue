@@ -177,15 +177,19 @@
             flex-direction : row;
 
             &.transform {
-                transform     : translateY(-0px);
-                margin-bottom : 20px;
+                transform     : translateY(-30px);
+                margin-bottom : 0px;
 
                 .price-label {
-                    margin : 12px 16px 12px;
+                    margin : 8px 30px 12px;
+
+                    @media (max-width: 500px) {
+                        margin: 12px;
+                    }
                 }
 
                 .sub-price-label {
-                    margin : 14px 0px 16px;
+                    margin : 16px 0 8px;
                 }
             }
 
@@ -202,6 +206,11 @@
                 @media (max-width : 932px) {
                     margin-top : 22px;
                     font-size  : 42px;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 32px;
+                    margin-top: 8px;
                 }
             }
         }
