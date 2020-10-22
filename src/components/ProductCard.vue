@@ -114,8 +114,8 @@
             font-size     : .75vw;
             font-weight   : 400;
 
-            @media (max-width: 500px) {
-                font-size: 12px;
+            @media (max-width : 500px) {
+                font-size : 12px;
             }
 
             h1 {
@@ -136,8 +136,8 @@
             &.lesspadding {
                 padding : 0 24px;
 
-                @media (max-width: 500px) {
-                    padding: 0;
+                @media (max-width : 500px) {
+                    padding : 0;
                 }
             }
 
@@ -157,8 +157,8 @@
 
             @media (max-width : 500px) {
                 max-width : 200px;
-                left: -40px;
-                bottom: 30%;
+                left      : -40px;
+                bottom    : 30%;
             }
         }
 
@@ -172,25 +172,25 @@
         }
 
         .price-label-container {
-            position       : relative;
-            display        : flex;
-            flex-direction : row;
-            justify-content: center;
-            align-items: center;
-
-            margin: 14px 0 32px;
+            position        : relative;
+            display         : flex;
+            flex-direction  : row;
+            justify-content : center;
+            align-items     : center;
+            margin          : 14px 0 32px;
 
             &.transform {
                 transform     : translateY(-30px);
-                margin-bottom: 10px;
-                    @media (max-width: 500px) {
-                        margin: 12px;
-                    }
+                margin-bottom : 10px;
+
+                @media (max-width : 500px) {
+                    margin : 32px 0 12px;
+                }
             }
 
             .sub-price-label {
-                font-size : 10px;
-                margin-left: 12px;
+                font-size   : 10px;
+                margin-left : 12px;
             }
 
             .price-label {
@@ -198,11 +198,11 @@
                 font-family : "HelveticaNeue-75";
 
                 @media (max-width : 932px) {
-                    font-size  : 42px;
+                    font-size : 42px;
                 }
 
-                @media (max-width: 500px) {
-                    font-size: 32px;
+                @media (max-width : 500px) {
+                    font-size : 32px;
                 }
             }
         }
