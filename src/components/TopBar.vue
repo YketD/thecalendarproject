@@ -47,6 +47,11 @@
 
         .image-container {
             margin-top : 10px;
+
+            @media (max-width: 500px) {
+                margin-top: 16px;
+                margin-right: 16px;
+            }
         }
     }
 
