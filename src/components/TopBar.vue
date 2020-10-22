@@ -65,5 +65,9 @@
         @media (max-width:1020px) {
             margin-left: 10px;
         }
+
+        @media (max-width: 500px) {
+            font-size: 14px;
+        }
     }
 </style>
