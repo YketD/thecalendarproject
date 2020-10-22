@@ -42,6 +42,7 @@
 
             @media (max-width : 500px) {
                 font-size : 3em;
+                margin-left: 6px;
             }
         }
 
@@ -61,8 +62,8 @@
         text-align  : left;
         margin-left : 22px;
 
-        @media (max-width: 1230px) {
-            margin-left: 14px;
+        @media (max-width:1020px) {
+            margin-left: 10px;
         }
     }
 </style>

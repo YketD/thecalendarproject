@@ -131,18 +131,20 @@
         @media (max-width : 1230px) {
             grid-column-start : 1;
             grid-column-end   : 3;
+            margin-left       : 10px;
         }
 
         @media (max-width : 780px) {
             grid-column-end : 2;
-            padding-top: 42px;
+            padding-top     : 42px;
+            margin-left: 0;
 
             img {
-                width: 120px;
+                width : 120px;
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width : 500px) {
 
         }
     }
@@ -187,6 +189,8 @@
             grid-gap              : 12vw;
             padding               : 0px;
             overflow              : hidden;
+            max-width             : 95%;
+            margin-left: 5px;
         }
     }
 </style>
