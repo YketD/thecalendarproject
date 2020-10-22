@@ -14,8 +14,8 @@
         <div class="price-label-container" :class="{transform: hasImage}">
             <h3 class="price-label">{{price}}</h3>
             <h4 v-if="price" class="sub-price-label">VAT included<br />
-                                        FREE shipping in the Netherlands<br />
-                                        €5,00 shipping in Europe</h4>
+                                                     FREE shipping in the Netherlands<br />
+                                                     €5,00 shipping in Europe</h4>
         </div>
 
         <img class="price-sticker" v-if="discountSticker" :src="discountSticker" />
@@ -114,6 +114,10 @@
             font-size     : .75vw;
             font-weight   : 400;
 
+            @media (max-width: 500px) {
+                font-size: 12px;
+            }
+
             h1 {
                 font-weight : 400;
             }
@@ -131,6 +135,10 @@
 
             &.lesspadding {
                 padding : 0 24px;
+
+                @media (max-width: 500px) {
+                    padding: 0;
+                }
             }
 
             @media (max-width : 1230px) {
@@ -146,17 +154,20 @@
             bottom    : 25%;
             left      : -125px;
             max-width : 350px;
+
+            @media (max-width : 500px) {
+                max-width : 200px;
+                left: -40px;
+                bottom: 30%;
+            }
         }
 
         .label-img {
-            max-width     : 350px;
-            transform     : translateY(-0px);
-            /*border-radius : 5px;*/
-            /*background    : linear-gradient(145deg, #bebebe, #e2e2e2);*/
-            /*box-shadow    : 5px 5px 10px #b5b5b5;*/
+            max-width : 350px;
+            transform : translateY(-0px);
 
             @media (max-width : 932px) {
-                max-width : 175px;
+                max-width : 225px;
             }
         }
 
@@ -166,8 +177,8 @@
             flex-direction : row;
 
             &.transform {
-                transform : translateY(-0px);
-                margin-bottom: 20px;
+                transform     : translateY(-0px);
+                margin-bottom : 20px;
 
                 .price-label {
                     margin : 12px 16px 12px;
