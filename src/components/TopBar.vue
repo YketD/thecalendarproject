@@ -60,5 +60,9 @@
         color       : #aa443c;
         text-align  : left;
         margin-left : 22px;
+
+        @media (max-width: 1230px) {
+            margin-left: 14px;
+        }
     }
 </style>
