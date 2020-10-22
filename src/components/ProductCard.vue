@@ -191,6 +191,10 @@
             .sub-price-label {
                 font-size   : 10px;
                 margin-left : 12px;
+
+                @media (max-width: 500px) {
+                    font-size: 8px;
+                }
             }
 
             .price-label {
