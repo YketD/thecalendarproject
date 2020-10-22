@@ -115,6 +115,7 @@
             margin            : 0;
         }
 
+
         img {
             width : 150px;
         }
@@ -134,6 +135,14 @@
 
         @media (max-width : 780px) {
             grid-column-end : 2;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 42px;
+
+            img {
+                width: 120px;
+            }
         }
     }
 
