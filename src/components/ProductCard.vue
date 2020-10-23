@@ -5,7 +5,7 @@
             <h1 class="red bottom">{{bottomLabelTwo}}</h1>
         </div>
 
-        <img class="label-img" v-if="hasImage" src="/images/assets/label-langerekt-1.png">
+        <img class="label-img" v-if="hasImage" src="/images/assets/label-langerekt-2.png">
 
         <div class="product-image-container" :class="{lesspadding: lessPadding }">
             <img class="product-image" :src="imageTitle">

@@ -31,7 +31,7 @@
                 :less-padding="true"
                 class="product-card"
                 has-image="true"
-                discount-sticker="/images/assets/limited-edition.png"
+                discount-sticker="/images/assets/limited-edition-50.png"
                 bottom-label-two="Limited photo print + free calendar Amsterdam"
                 price="€145,-"
                 bottom-text=""
@@ -45,7 +45,7 @@
                 has-image="true"
                 bottom-label-two="Limited photo print + free calendar Berlin"
                 price="€145,-"
-                discount-sticker="/images/assets/only-50.jpg"
+                discount-sticker="/images/assets/limited-edition-50.png"
                 bottom-text="Limited Edition of 50"
                 bottom-text-two="Size print 36 x 24 cm "
                 bottom-text-three="Gicleeprint op Epson luster 300 grms"
@@ -64,7 +64,7 @@
                 discount-sticker="/images/assets/only-10.png"
                 price="€55,-"
                 v-on:click.native="orderProduct('frame-product-4256651706434')"
-                :image-title="'/images/products/2020-available.jpg'" />
+                :image-title="'/images/assets/final-2020.jpg'" />
         <div></div>
 
         <!--        <div class="year-label-2019">-->
