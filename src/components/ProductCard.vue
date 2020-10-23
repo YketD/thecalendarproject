@@ -78,15 +78,15 @@
         transition      : all .2s ease-in-out;
         cursor          : pointer;
         position        : relative;
-        background      : white;
-        border          : 16px solid #aa443c;
         text-align      : center;
-        border-radius   : 2px;
         display         : flex;
         flex-direction  : column;
         justify-content : center;
         align-items     : center;
-        box-shadow      : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 30px;
+        background: #e1e1e1;
+        box-shadow:  20px 20px 60px #bfbfbf,
+        -20px -20px 60px #ffffff;
 
         @media (min-width : 932px) {
             &:hover {
@@ -131,6 +131,8 @@
                 max-width  : 100%;
                 box-sizing : border-box;
                 max-height : 600px;
+                border-radius: 4px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             }
 
             &.lesspadding {
