@@ -117,10 +117,7 @@
         justify-content   : left;
         height            : 80px;
         border-radius     : 16px;
-        background        : #e1e1e1;
-        box-shadow        : 11px 11px 22px #bfbfbf,
-        -11px -11px 22px #ffffff;
-        padding           : 10px 15px;
+
 
         @media (max-width: 500px) {
             display: flex;
