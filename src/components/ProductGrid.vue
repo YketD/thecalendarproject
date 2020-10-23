@@ -1,13 +1,12 @@
 <template>
     <div class="products">
 
-        <!--        <div class="year-label">-->
-        <!--            <img src="/images/assets/2021.png" />-->
-        <!--        </div>-->
-        <div class="year-label">
-            <img src="/images/assets/kalender-logo.png" />
-            <h1>2021</h1>
+        <div class="year-label twenty-one">
         </div>
+        <!--        <div class="year-label">-->
+        <!--            <img src="/images/assets/" />-->
+        <!--            <h1>2021</h1>-->
+        <!--        </div>-->
 
         <product-card
                 class="product-card"
@@ -57,9 +56,7 @@
         <!--        <div class="year-label">-->
         <!--            <img src="/images/assets/2020.png" />-->
         <!--        </div>-->
-        <div class="year-label">
-            <img src="/images/assets/kalender-logo.png" />
-            <h1>2020</h1>
+        <div class="year-label twenty">
         </div>
 
         <product-card
@@ -74,8 +71,6 @@
         <!--        <div class="year-label-2019">-->
         <!--        </div>-->
         <div class="year-label">
-            <img src="/images/assets/kalender-logo.png" />
-            <h1>2019</h1>
         </div>
 
 
@@ -110,8 +105,9 @@
 <style lang="scss" scoped>
     .year-label {
         margin-top        : 24px;
-        /*background-image  : url("/images/assets/Label.png");*/
-        /*background-repeat : no-repeat;*/
+        background-image  : url("/images/assets/2019-label-1.png");
+        background-repeat : no-repeat;
+        background-size   : 100%;
         text-align        : left;
         display           : flex;
         justify-content   : left;
@@ -119,13 +115,13 @@
         border-radius     : 16px;
 
 
-        @media (max-width: 500px) {
-            display: flex;
-            justify-content: left;
-            padding: 0;
-            margin: 0;
-            margin-top: 12px;
-            box-shadow: none;
+        @media (max-width : 500px) {
+            display         : flex;
+            justify-content : left;
+            padding         : 0;
+            margin          : 0;
+            margin-top      : 12px;
+            box-shadow      : none;
         }
 
         h1 {
@@ -133,8 +129,8 @@
             font-size   : 52px;
             color       : #000000;
 
-            @media (max-width: 500px) {
-                margin-top: 12px;
+            @media (max-width : 500px) {
+                margin-top : 12px;
             }
         }
 
@@ -142,17 +138,17 @@
             height        : 55px;
             width         : 45px;
             padding-right : 12px;
-            margin-top    :8px;
-            height: 45px;
+            margin-top    : 8px;
+            height        : 45px;
 
             @media (max-width : 500px) {
-                max-width: 45px;
-                margin-top: 20px;
-                height:45px;
+                max-width  : 45px;
+                margin-top : 20px;
+                height     : 45px;
             }
         }
-        &-2019 {
-            background-image  : url("/images/assets/2019-label.png");
+
+        &-2020 {
             background-repeat : no-repeat;
             background-size   : 300px 150px;
             height            : 150px;
@@ -177,6 +173,14 @@
                 width : 120px;
             }
         }
+    }
+
+    .twenty-one{
+        background-image : url("/images/assets/2021-label.png");
+    }
+    .twenty {
+        background-image : url("/images/assets/2020-label.png");
+
     }
 
     .column-fill {
