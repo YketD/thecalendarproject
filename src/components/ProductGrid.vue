@@ -103,7 +103,7 @@
 
 <style lang="scss" scoped>
     .year-label {
-        margin-top        : 24px;
+        margin-top        : 4px;
         background-image  : url("/images/assets/2019-label-1.png");
         background-repeat : no-repeat;
         background-size   : 100%;
@@ -120,8 +120,9 @@
             padding         : 0;
             margin          : 0;
             margin-top      : 12px;
+            margin-left: -12px;
             box-shadow      : none;
-            max-width: 180px;
+            max-width       : 180px;
         }
 
         h1 {
@@ -175,9 +176,10 @@
         }
     }
 
-    .twenty-one{
+    .twenty-one {
         background-image : url("/images/assets/2021-label.png");
     }
+
     .twenty {
         background-image : url("/images/assets/2020-label.png");
 

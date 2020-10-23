@@ -144,6 +144,7 @@
             @media (max-width : 1230px) {
                 padding : 0 42px;
             }
+
             @media (max-width : 932px) {
                 padding : 0 24px;
             }
@@ -161,6 +162,7 @@
                 bottom    : 30%;
             }
         }
+
         .stickerposition {
             position  : absolute;
             bottom    : 60px;
