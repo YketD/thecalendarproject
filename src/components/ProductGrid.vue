@@ -142,7 +142,8 @@
             height        : 55px;
             width         : 45px;
             padding-right : 12px;
-            margin-top    : 4px;
+            margin-top    :8px;
+            height: 45px;
 
             @media (max-width : 500px) {
                 max-width: 55px;
