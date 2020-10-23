@@ -108,15 +108,13 @@
 
         h1 {
             font-weight   : 400;
-            text-shadow   : 1px 1px 2px #aa443c;
             font-size     : 52px;
             padding       : 10px 15px;
-            color         : black;
+            color         : #555;
             border-radius : 16px;
             background    : #e1e1e1;
             box-shadow    : 11px 11px 22px #bfbfbf,
             -11px -11px 22px #ffffff;
-
         }
 
         &-2019 {
