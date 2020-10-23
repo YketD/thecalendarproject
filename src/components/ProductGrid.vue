@@ -111,7 +111,7 @@
     .year-label {
         margin-top        : 24px;
         /*background-image  : url("/images/assets/Label.png");*/
-        background-repeat : no-repeat;
+        /*background-repeat : no-repeat;*/
         text-align        : left;
         display           : flex;
         justify-content   : left;
@@ -122,10 +122,23 @@
         -11px -11px 22px #ffffff;
         padding           : 10px 15px;
 
+        @media (max-width: 500px) {
+            display: flex;
+            justify-content: left;
+            padding: 0;
+            margin: 0;
+            margin-top: 12px;
+            box-shadow: none;
+        }
+
         h1 {
             font-weight : 400;
             font-size   : 52px;
             color       : #000000;
+
+            @media (max-width: 500px) {
+                margin-top: 12px;
+            }
         }
 
         img {
@@ -133,8 +146,12 @@
             width         : 45px;
             padding-right : 12px;
             margin-top    : 4px;
-        }
 
+            @media (max-width : 500px) {
+                max-width: 55px;
+                margin-top: 16px;
+            }
+        }
         &-2019 {
             background-image  : url("/images/assets/2019-label.png");
             background-repeat : no-repeat;
@@ -146,13 +163,6 @@
             margin            : 0;
         }
 
-        @media (max-width : 932px) {
-            grid-column-end : 3;
-            background-size : 250px 125px;
-            height          : 125px;
-            margin-top      : 20px;
-            margin-left     : 20px;
-        }
 
         @media (max-width : 1230px) {
             grid-column-start : 1;
@@ -162,16 +172,11 @@
 
         @media (max-width : 780px) {
             grid-column-end : 2;
-            padding-top     : 42px;
             margin-left     : 0;
 
             img {
                 width : 120px;
             }
-        }
-
-        @media (max-width : 500px) {
-
         }
     }
 
