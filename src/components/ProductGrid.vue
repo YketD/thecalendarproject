@@ -146,8 +146,9 @@
             height: 45px;
 
             @media (max-width : 500px) {
-                max-width: 55px;
-                margin-top: 16px;
+                max-width: 45px;
+                margin-top: 20px;
+                height:45px;
             }
         }
         &-2019 {
