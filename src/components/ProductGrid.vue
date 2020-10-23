@@ -29,25 +29,24 @@
                 :less-padding="true"
                 class="product-card"
                 has-image="true"
-                bottom-label-two="Signed print + calendar Amsterdam"
+                bottom-label-two="Photo print + calendar Amsterdam"
                 price="€145,-"
                 bottom-text=""
-                v-on:click.native="orderProduct('frame-product-4701905322050')"
-                :image-title="'/images/products/ams-2021-print.png'" />
+                v-on:click.native="orderProduct('frame-product-4701905518658')"
+                :image-title="'/images/products/ams-print-uncensored.png'" />
 
         <product-card
                 :less-padding="true"
                 class="product-card"
-
                 bottom-label=""
                 has-image="true"
-                bottom-label-two="Signed print + calendar Berlin"
+                bottom-label-two="Photo print + calendar Berlin"
                 price="€145,-"
                 bottom-text="Limited Edition of 50"
                 bottom-text-two="Size print 36 x 24 cm "
                 bottom-text-three="Gicleeprint op Epson luster 300 grms"
-                v-on:click.native="orderProduct('frame-product-4256651706434')"
-                :image-title="'/images/products/calendar-print.png'" />
+                v-on:click.native="orderProduct('frame-product-4701905322050')"
+                :image-title="'/images/products/ber-print-uncenserod.png'" />
 
         <div class="year-label">
             <img src="/images/assets/2020.png" />
@@ -58,7 +57,7 @@
                 label="2020 Kalender"
                 discount-sticker="/images/assets/only-10.png"
                 price="€55,-"
-                v-on:click.native="orderProduct('frame-product-4256713769026')"
+                v-on:click.native="orderProduct('frame-product-4256651706434')"
                 :image-title="'/images/products/2020-available.jpg'" />
         <div></div>
 

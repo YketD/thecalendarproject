@@ -227,9 +227,15 @@
                                 }
                             }
                         },
-                        "buttonDestination": "checkout",
+                        "buttonDestination": "modal",
+                        "contents": {
+                            "img": false,
+                            "title": false,
+                            "price": false,
+                            "options": false
+                        },
                         "text": {
-                            "button": "Buy now"
+                            "button": "View product"
                         }
                     },
                     "productSet": {
@@ -315,9 +321,15 @@
                                 }
                             }
                         },
-                        "buttonDestination": "checkout",
+                        "buttonDestination": "modal",
+                        "contents": {
+                            "img": false,
+                            "title": false,
+                            "price": false,
+                            "options": false
+                        },
                         "text": {
-                            "button": "Buy now"
+                            "button": "View product"
                         }
                     },
                     "productSet": {
@@ -403,9 +415,15 @@
                                 }
                             }
                         },
-                        "buttonDestination": "checkout",
+                        "buttonDestination": "modal",
+                        "contents": {
+                            "img": false,
+                            "title": false,
+                            "price": false,
+                            "options": false
+                        },
                         "text": {
-                            "button": "Buy now"
+                            "button": "View product"
                         }
                     },
                     "productSet": {
@@ -491,9 +509,15 @@
                                 }
                             }
                         },
-                        "buttonDestination": "checkout",
+                        "buttonDestination": "modal",
+                        "contents": {
+                            "img": false,
+                            "title": false,
+                            "price": false,
+                            "options": false
+                        },
                         "text": {
-                            "button": "Buy now"
+                            "button": "View product"
                         }
                     },
                     "productSet": {
