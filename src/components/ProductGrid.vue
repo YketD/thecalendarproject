@@ -49,10 +49,10 @@
                 v-on:click.native="orderProduct('frame-product-4701905322050')"
                 :image-title="'/images/products/ber-print-uncenserod.png'" />
 
-<!--        <div class="year-label">-->
-<!--            <img src="/images/assets/2020.png" />-->
-<!--        </div>-->
-            <div class="year-label"><h1>2020</h1></div>
+        <!--        <div class="year-label">-->
+        <!--            <img src="/images/assets/2020.png" />-->
+        <!--        </div>-->
+        <div class="year-label"><h1>2020</h1></div>
 
         <product-card
                 class="product-card"
@@ -63,12 +63,12 @@
                 :image-title="'/images/products/2020-available.jpg'" />
         <div></div>
 
-<!--        <div class="year-label-2019">-->
-<!--        </div>-->
-            <div class="year-label"><h1>2019</h1></div>
+        <!--        <div class="year-label-2019">-->
+        <!--        </div>-->
+        <div class="year-label"><h1>2019</h1></div>
 
 
-            <product-card
+        <product-card
                 class="product-card"
                 label="2019 Kalender"
                 v-on:click.native="orderProduct('frame-product-4256713769026')"
@@ -98,26 +98,27 @@
 
 <style lang="scss" scoped>
     .year-label {
-            margin-top: 24px;
+        margin-top        : 24px;
         /*background-image  : url("/images/assets/Label.png");*/
         background-repeat : no-repeat;
         text-align        : left;
-            display: flex;
-            justify-content: center;
-            height: 80px;
+        display           : flex;
+        justify-content   : center;
+        height            : 80px;
 
-            h1 {
-                    font-weight: 400;
+        h1 {
+            font-weight   : 400;
+            text-shadow   : 1px 1px 2px #aa443c;
+            font-size     : 52px;
+            padding       : 10px 15px;
+            color         : black;
+            border-radius : 16px;
+            background    : #e1e1e1;
+            box-shadow    : 11px 11px 22px #bfbfbf,
+            -11px -11px 22px #ffffff;
 
-                    font-size         : 52px;
-                    padding: 10px 15px;
-                    color             : black;
-                    border-radius     : 16px;
-                    background        : #e1e1e1;
-                    box-shadow        : 11px 11px 22px #bfbfbf,
-                    -11px -11px 22px #ffffff;
+        }
 
-            }
         &-2019 {
             background-image  : url("/images/assets/2019-label.png");
             background-repeat : no-repeat;
