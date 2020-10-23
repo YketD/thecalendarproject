@@ -170,6 +170,13 @@
             right     : -120px;
             left      : unset;
             max-width : 250px;
+
+            @media (max-width: 500px) {
+                max-width: 175px;
+                bottom: 80px;
+                top: unset;
+                right: -40px;
+            }
         }
 
         .label-img {
