@@ -32,7 +32,7 @@
                 class="product-card"
                 has-image="true"
                 discount-sticker="/images/assets/limited-edition-of-50.png"
-                bottom-label-two="Limited photo print + free calendar Amsterdam"
+                bottom-label-two="COMBI photo print + free calendar (Ams)"
                 price="€145,-"
                 bottom-text=""
                 v-on:click.native="orderProduct('frame-product-4701905518658')"
@@ -43,7 +43,7 @@
                 class="product-card"
                 bottom-label=""
                 has-image="true"
-                bottom-label-two="Limited photo print + free calendar Berlin"
+                bottom-label-two="COMBI photo print + free calendar (Ber)"
                 price="€145,-"
                 discount-sticker="/images/assets/limited-edition-of-50.png"
                 bottom-text="Limited Edition of 50"
@@ -114,8 +114,10 @@
         height            : 130px;
         border-radius     : 16px;
 
-
-        @media (max-width : 500px) {
+        @media(max-width: 1630px) {
+            width: 120%;
+        }
+        @media (max-width : 1230px) {
             display         : flex;
             justify-content : left;
             padding         : 0;

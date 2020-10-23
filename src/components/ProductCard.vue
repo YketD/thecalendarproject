@@ -21,7 +21,7 @@
         <img class="price-sticker" :class="{stickerposition: lessPadding }" v-if="discountSticker"
              :src="discountSticker" />
 
-        <img class="buy-now" src="../../public/images/buttons/but-now-new.png">
+        <img class="buy-now" src="../../public/images/buttons/buy-button-new.png">
     </div>
 </template>
 
