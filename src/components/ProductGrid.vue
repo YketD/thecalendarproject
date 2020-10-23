@@ -1,6 +1,5 @@
 <template>
     <div class="products">
-
         <div class="year-label twenty-one">
         </div>
         <!--        <div class="year-label">-->

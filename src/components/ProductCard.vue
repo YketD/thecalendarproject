@@ -4,12 +4,12 @@
             <h1 class="red top">{{label}} {{bottomLabel}}</h1>
             <h1 class="red bottom">{{bottomLabelTwo}}</h1>
         </div>
+
         <img class="label-img" v-if="hasImage" src="/images/assets/label-langerekt-1.png">
 
         <div class="product-image-container" :class="{lesspadding: lessPadding }">
             <img class="product-image" :src="imageTitle">
         </div>
-
 
         <div class="price-label-container" :class="{transform: hasImage}">
             <h3 class="price-label">{{price}}</h3>
@@ -18,7 +18,7 @@
                                                      €5,00 shipping in Europe</h4>
         </div>
 
-        <img class="price-sticker" v-if="discountSticker" :src="discountSticker" />
+        <img class="price-sticker" :class="{stickerposition: lessPadding }" v-if="discountSticker" :src="discountSticker" />
 
         <img class="buy-now" src="../../public/images/buttons/buy-now.png">
     </div>
@@ -160,6 +160,13 @@
                 left      : -40px;
                 bottom    : 30%;
             }
+        }
+        .stickerposition {
+            position  : absolute;
+            bottom    : 60px;
+            right      : -60px;
+            left: unset;
+            max-width : 250px;
         }
 
         .label-img {
