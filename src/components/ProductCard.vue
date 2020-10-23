@@ -1,5 +1,5 @@
 <template>
-    <div class="product-card">
+    <div class="product-card" :class="{bottom: marginBottom}">
         <div class="header">
             <h1 class="red top">{{label}} {{bottomLabel}}</h1>
             <h1 class="red bottom">{{bottomLabelTwo}}</h1>
@@ -33,6 +33,10 @@
             label: {
                 type: String,
                 required: false,
+            },
+            marginBottom: {
+                type: String,
+                required: false
             },
             hasImage: {
                 type: String,
@@ -239,5 +243,11 @@
     .no-margin {
         margin    : 0;
         transform : translateY(-40px);
+    }
+
+    @media (max-width: 500px) {
+        .bottom {
+            margin-bottom: 42px;
+        }
     }
 </style>
