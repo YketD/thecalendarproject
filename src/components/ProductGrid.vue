@@ -4,7 +4,10 @@
         <!--        <div class="year-label">-->
         <!--            <img src="/images/assets/2021.png" />-->
         <!--        </div>-->
-        <div class="year-label"><h1>2021</h1></div>
+        <div class="year-label">
+            <img src="/images/assets/kalender-logo.png" />
+            <h1>2021</h1>
+        </div>
 
         <product-card
                 class="product-card"
@@ -54,7 +57,10 @@
         <!--        <div class="year-label">-->
         <!--            <img src="/images/assets/2020.png" />-->
         <!--        </div>-->
-        <div class="year-label"><h1>2020</h1></div>
+        <div class="year-label">
+            <img src="/images/assets/kalender-logo.png" />
+            <h1>2020</h1>
+        </div>
 
         <product-card
                 class="product-card"
@@ -67,7 +73,10 @@
 
         <!--        <div class="year-label-2019">-->
         <!--        </div>-->
-        <div class="year-label"><h1>2019</h1></div>
+        <div class="year-label">
+            <img src="/images/assets/kalender-logo.png" />
+            <h1>2019</h1>
+        </div>
 
 
         <product-card
@@ -105,18 +114,25 @@
         background-repeat : no-repeat;
         text-align        : left;
         display           : flex;
-        justify-content   : center;
+        justify-content   : left;
         height            : 80px;
+        border-radius     : 16px;
+        background        : #e1e1e1;
+        box-shadow        : 11px 11px 22px #bfbfbf,
+        -11px -11px 22px #ffffff;
+        padding           : 10px 15px;
 
         h1 {
-            font-weight   : 400;
-            font-size     : 52px;
-            padding       : 10px 15px;
-            color         : #555555;
-            border-radius : 16px;
-            background    : #e1e1e1;
-            box-shadow    : 11px 11px 22px #bfbfbf,
-            -11px -11px 22px #ffffff;
+            font-weight : 400;
+            font-size   : 52px;
+            color       : #000000;
+        }
+
+        img {
+            height        : 55px;
+            width         : 45px;
+            padding-right : 12px;
+            margin-top    : 4px;
         }
 
         &-2019 {
@@ -128,11 +144,6 @@
             padding           : 50px 25px 0;
             text-align        : left;
             margin            : 0;
-        }
-
-
-        img {
-            width : 150px;
         }
 
         @media (max-width : 932px) {
@@ -184,13 +195,13 @@
         width                 : 100%;
         max-width             : 100vw;
         overflow              : hidden;
-        padding               : 40px 72px;
+        padding               : 40px 72px 40px 12px;
         margin-bottom         : 24px;
         grid-gap              : 60px;
         grid-row-gap          : 40px;
 
         @media (max-width : 1630px) {
-            padding  : 40px 0px;
+            padding  : 40px 12px;
             grid-gap : 30px;
         }
 
