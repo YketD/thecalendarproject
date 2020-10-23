@@ -122,6 +122,7 @@
             margin          : 0;
             margin-top      : 12px;
             box-shadow      : none;
+            max-width: 180px;
         }
 
         h1 {
