@@ -1,9 +1,10 @@
 <template>
     <div class="products">
 
-        <div class="year-label">
-            <img src="/images/assets/2021.png" />
-        </div>
+        <!--        <div class="year-label">-->
+        <!--            <img src="/images/assets/2021.png" />-->
+        <!--        </div>-->
+        <div class="year-label"><h1>2021</h1></div>
 
         <product-card
                 class="product-card"
@@ -29,7 +30,7 @@
                 :less-padding="true"
                 class="product-card"
                 has-image="true"
-                bottom-label-two="Photo print + calendar Amsterdam"
+                bottom-label-two="Limited photo print + free calendar Amsterdam"
                 price="€145,-"
                 bottom-text=""
                 v-on:click.native="orderProduct('frame-product-4701905518658')"
@@ -40,7 +41,7 @@
                 class="product-card"
                 bottom-label=""
                 has-image="true"
-                bottom-label-two="Photo print + calendar Berlin"
+                bottom-label-two="Limited photo print + free calendar Berlin"
                 price="€145,-"
                 bottom-text="Limited Edition of 50"
                 bottom-text-two="Size print 36 x 24 cm "
@@ -48,9 +49,10 @@
                 v-on:click.native="orderProduct('frame-product-4701905322050')"
                 :image-title="'/images/products/ber-print-uncenserod.png'" />
 
-        <div class="year-label">
-            <img src="/images/assets/2020.png" />
-        </div>
+<!--        <div class="year-label">-->
+<!--            <img src="/images/assets/2020.png" />-->
+<!--        </div>-->
+            <div class="year-label"><h1>2020</h1></div>
 
         <product-card
                 class="product-card"
@@ -61,10 +63,12 @@
                 :image-title="'/images/products/2020-available.jpg'" />
         <div></div>
 
-        <div class="year-label-2019">
-        </div>
+<!--        <div class="year-label-2019">-->
+<!--        </div>-->
+            <div class="year-label"><h1>2019</h1></div>
 
-        <product-card
+
+            <product-card
                 class="product-card"
                 label="2019 Kalender"
                 v-on:click.native="orderProduct('frame-product-4256713769026')"
@@ -94,15 +98,26 @@
 
 <style lang="scss" scoped>
     .year-label {
-        background-image  : url("/images/assets/Label.png");
+            margin-top: 24px;
+        /*background-image  : url("/images/assets/Label.png");*/
         background-repeat : no-repeat;
-        background-size   : 300px 150px;
-        height            : 150px;
-        width             : 300px;
-        padding           : 50px 25px 0;
         text-align        : left;
-        margin            : 0;
+            display: flex;
+            justify-content: center;
+            height: 80px;
 
+            h1 {
+                    font-weight: 400;
+
+                    font-size         : 52px;
+                    padding: 10px 15px;
+                    color             : black;
+                    border-radius     : 16px;
+                    background        : #e1e1e1;
+                    box-shadow        : 11px 11px 22px #bfbfbf,
+                    -11px -11px 22px #ffffff;
+
+            }
         &-2019 {
             background-image  : url("/images/assets/2019-label.png");
             background-repeat : no-repeat;
@@ -136,7 +151,7 @@
         @media (max-width : 780px) {
             grid-column-end : 2;
             padding-top     : 42px;
-            margin-left: 0;
+            margin-left     : 0;
 
             img {
                 width : 120px;
@@ -189,7 +204,7 @@
             padding               : 0px;
             overflow              : hidden;
             max-width             : 95%;
-            margin-left: 5px;
+            margin-left           : 5px;
         }
     }
 </style>
