@@ -30,6 +30,7 @@
                 :less-padding="true"
                 class="product-card"
                 has-image="true"
+                discount-sticker="/images/assets/limited-edition.png"
                 bottom-label-two="Limited photo print + free calendar Amsterdam"
                 price="€145,-"
                 bottom-text=""
@@ -43,6 +44,7 @@
                 has-image="true"
                 bottom-label-two="Limited photo print + free calendar Berlin"
                 price="€145,-"
+                discount-sticker="/images/assets/only-50.jpg"
                 bottom-text="Limited Edition of 50"
                 bottom-text-two="Size print 36 x 24 cm "
                 bottom-text-three="Gicleeprint op Epson luster 300 grms"
@@ -110,7 +112,7 @@
             font-weight   : 400;
             font-size     : 52px;
             padding       : 10px 15px;
-            color         : #555;
+            color         : #555555;
             border-radius : 16px;
             background    : #e1e1e1;
             box-shadow    : 11px 11px 22px #bfbfbf,
