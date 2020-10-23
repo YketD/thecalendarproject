@@ -8,6 +8,7 @@
         </div>
 
         <span class="sub-text">Shot by Lara Verheijden</span>
+        <br />
     </div>
 </template>
 
@@ -18,6 +19,10 @@
 </script>
 
 <style lang="scss" scoped>
+    svg {
+        max-width: 20px;
+        margin-top: 4px;
+    }
     .headline-container {
         width          : 100%;
         height         : 80px;
@@ -41,17 +46,17 @@
             font-weight : 400;
 
             @media (max-width : 500px) {
-                font-size : 3em;
-                margin-left: 6px;
+                font-size   : 3em;
+                margin-left : 6px;
             }
         }
 
         .image-container {
             margin-top : 10px;
 
-            @media (max-width: 500px) {
-                margin-top: 16px;
-                margin-right: 16px;
+            @media (max-width : 500px) {
+                margin-top   : 16px;
+                margin-right : 16px;
             }
         }
     }
@@ -62,12 +67,18 @@
         text-align  : left;
         margin-left : 22px;
 
-        @media (max-width:1020px) {
-            margin-left: 10px;
+        &.ideal {
+            margin-left: 4px;
+            margin-top:-8px;
+            font-size: 14px;
         }
 
-        @media (max-width: 500px) {
-            font-size: 14px;
+        @media (max-width : 1020px) {
+            margin-left : 10px;
+        }
+
+        @media (max-width : 500px) {
+            font-size : 14px;
         }
     }
 </style>

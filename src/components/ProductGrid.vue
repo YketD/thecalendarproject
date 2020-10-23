@@ -31,7 +31,7 @@
                 :less-padding="true"
                 class="product-card"
                 has-image="true"
-                discount-sticker="/images/assets/limited-edition-50.png"
+                discount-sticker="/images/assets/limited-edition-of-50.png"
                 bottom-label-two="Limited photo print + free calendar Amsterdam"
                 price="€145,-"
                 bottom-text=""
@@ -45,12 +45,12 @@
                 has-image="true"
                 bottom-label-two="Limited photo print + free calendar Berlin"
                 price="€145,-"
-                discount-sticker="/images/assets/limited-edition-50.png"
+                discount-sticker="/images/assets/limited-edition-of-50.png"
                 bottom-text="Limited Edition of 50"
-                bottom-text-two="Size print 36 x 24 cm "
+                bottom-text-two="Size print 36 x 24 cm"
                 bottom-text-three="Gicleeprint op Epson luster 300 grms"
                 v-on:click.native="orderProduct('frame-product-4701905322050')"
-                :image-title="'/images/products/ber-print-uncenserod.png'" />
+                :image-title="'/images/products/Naamloos-1-Hersteld.png'" />
 
         <!--        <div class="year-label">-->
         <!--            <img src="/images/assets/2020.png" />-->
@@ -107,10 +107,11 @@
         background-image  : url("/images/assets/2019-label-1.png");
         background-repeat : no-repeat;
         background-size   : 100%;
+        width: 150%;
         text-align        : left;
         display           : flex;
         justify-content   : left;
-        height            : 80px;
+        height            : 130px;
         border-radius     : 16px;
 
 
@@ -123,6 +124,7 @@
             margin-left     : -12px;
             box-shadow      : none;
             max-width       : 180px;
+            height: 80px;
         }
 
         h1 {
