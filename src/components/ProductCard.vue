@@ -18,7 +18,8 @@
                                                      €5,00 shipping in Europe</h4>
         </div>
 
-        <img class="price-sticker" :class="{stickerposition: lessPadding }" v-if="discountSticker" :src="discountSticker" />
+        <img class="price-sticker" :class="{stickerposition: lessPadding }" v-if="discountSticker"
+             :src="discountSticker" />
 
         <img class="buy-now" src="../../public/images/buttons/buy-now.png">
     </div>
@@ -165,9 +166,9 @@
 
         .stickerposition {
             position  : absolute;
-            bottom    : 60px;
-            right      : -60px;
-            left: unset;
+            top       : 60px;
+            right     : -120px;
+            left      : unset;
             max-width : 250px;
         }
 
@@ -201,8 +202,8 @@
                 font-size   : 10px;
                 margin-left : 12px;
 
-                @media (max-width: 500px) {
-                    font-size: 8px;
+                @media (max-width : 500px) {
+                    font-size : 8px;
                 }
             }
 
