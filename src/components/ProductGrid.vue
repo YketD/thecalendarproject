@@ -120,7 +120,7 @@
             padding         : 0;
             margin          : 0;
             margin-top      : 12px;
-            margin-left: -12px;
+            margin-left     : -12px;
             box-shadow      : none;
             max-width       : 180px;
         }
@@ -173,6 +173,9 @@
             img {
                 width : 120px;
             }
+        }
+        @media (max-width : 500px) {
+            margin-left : -12px;
         }
     }
 
