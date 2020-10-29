@@ -12,7 +12,7 @@
                 label="The Amsterdam"
                 bottom-label="calender"
                 :margin-bottom="true"
-                discount-sticker="/images/assets/pre-sale.png"
+                discount-sticker="/images/assets/presale-13-november.png"
                 price="€45,-"
                 v-on:click.native="orderProduct('frame-product-4701905027138')"
                 :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
@@ -20,7 +20,7 @@
         <product-card
                 class="product-card"
                 label="The Berlin"
-                discount-sticker="/images/assets/pre-sale.png"
+                discount-sticker="/images/assets/presale-13-november.png"
                 bottom-label="calender"
                 price="€45,-"
                 v-on:click.native="orderProduct('frame-product-4701904633922')"
