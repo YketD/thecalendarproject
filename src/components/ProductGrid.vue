@@ -1,18 +1,22 @@
 <template>
     <div class="products">
+        <a href="https://www.google.com/maps/d/u/0/edit?mid=1Xc47FIOCnOAImzEVB-0XT4pz9fRtu6KO&usp=sharing">
+        <div class="bikeroute">
+            <div class="text">
+            <img src="/images/assets/Tekst 1.png" />
+            <img class="small" src="/images/assets/Tekst 2.png" />
+            </div>
+        </div>
+        </a>
+
         <div class="year-label twenty-one">
         </div>
-        <!--        <div class="year-label">-->
-        <!--            <img src="/images/assets/" />-->
-        <!--            <h1>2021</h1>-->
-        <!--        </div>-->
 
         <product-card
                 class="product-card"
                 label="The Amsterdam"
                 bottom-label="calender"
                 :margin-bottom="true"
-                discount-sticker="/images/assets/presale-13-november.png"
                 price="€45,-"
                 v-on:click.native="orderProduct('frame-product-4701905027138')"
                 :image-title="'/images/products/amsterdam-2021-final.jpeg'" />
@@ -20,7 +24,6 @@
         <product-card
                 class="product-card"
                 label="The Berlin"
-                discount-sticker="/images/assets/presale-13-november.png"
                 bottom-label="calender"
                 price="€45,-"
                 v-on:click.native="orderProduct('frame-product-4701904633922')"
@@ -104,6 +107,45 @@
 </script>
 
 <style lang="scss" scoped>
+    a{
+        @media ('min-width:500px') {
+            display: none;
+        }
+        text-decoration: none;
+    }
+    .bikeroute {
+        margin-top: 20px;
+        margin-bottom: -20px;
+        max-width: 100vw;
+        padding: 10px;
+        border: 8px solid #aa443c;
+        background: white;
+        box-shadow      : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width : 90%;
+            }
+
+            .small {
+                max-width: 60%;
+            }
+        }
+        .pointer {
+            max-width: 10%;
+            font-size: 35px;
+            color: black;
+        }
+    }
     .year-label {
         margin-top        : 4px;
         background-image  : url("/images/assets/2019-label-1.png");
