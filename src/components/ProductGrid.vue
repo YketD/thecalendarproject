@@ -1,13 +1,5 @@
 <template>
     <div class="products">
-        <a href="https://www.google.com/maps/d/u/0/edit?mid=1Xc47FIOCnOAImzEVB-0XT4pz9fRtu6KO&usp=sharing">
-        <div class="bikeroute">
-            <div class="text">
-            <img src="/images/assets/Tekst 1.png" />
-            <img class="small" src="/images/assets/Tekst 2.png" />
-            </div>
-        </div>
-        </a>
 
         <div class="year-label twenty-one">
         </div>
