@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="headline-container">
-            <h1 id="headline">THE NUDE CALENDER PROJECT</h1>
+            <h1 id="headline">THE NUDE CALENDAR PROJECT</h1>
             <div class="image-container">
                 <img src="/images/assets/kalender-logo.png" />
             </div>

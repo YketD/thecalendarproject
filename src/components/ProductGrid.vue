@@ -7,7 +7,7 @@
         <product-card
                 class="product-card"
                 label="The Amsterdam"
-                bottom-label="calender"
+                bottom-label="calendar"
                 :margin-bottom="true"
                 price="€45,-"
                 v-on:click.native="orderProduct('frame-product-4701905027138')"
@@ -16,7 +16,7 @@
         <product-card
                 class="product-card"
                 label="The Berlin"
-                bottom-label="calender"
+                bottom-label="calendar"
                 price="€45,-"
                 v-on:click.native="orderProduct('frame-product-4701904633922')"
                 :image-title="'/images/products/berlin-2021-final.jpeg'" />
