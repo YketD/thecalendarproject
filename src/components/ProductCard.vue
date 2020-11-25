@@ -1,7 +1,10 @@
 <template>
     <div class="product-card" :class="{cardBottom: marginBottom}">
         <div class="header">
-            <h1 class="red top">{{label}} {{bottomLabel}}</h1>
+            <h1 v-if="!seperateRows" class="red top">{{label}} {{bottomLabel}}</h1>
+            <h1 v-else class="red top">{{label}} <br>
+                                       {{bottomLabel}}</h1>
+
             <h1 class="red bottom">{{bottomLabelTwo}}</h1>
         </div>
 
@@ -33,6 +36,10 @@
             label: {
                 type: String,
                 required: false,
+            },
+            seperateRows: {
+                type: Boolean,
+                required:false,
             },
             marginBottom: {
                 type: String,
